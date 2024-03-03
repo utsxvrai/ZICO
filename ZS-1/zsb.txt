@@ -88,5 +88,56 @@
 
 -> Operators :
     1. Arithmetic Operators : +,-,*,%,/,**
-    2. 
+    2. Assignment Operators : =, +=, -=, /=, *=, %=
+    3. Relational Operators :  >= , <= , >, < 
+    4. Logical operators : AND(&&) , OR(||), NOT(!)
+    5. Bitwise Operators 
+    6. Equality Operators
+    7. Typeof Operators
+
+
+
+-> Short Circuiting and Coercion with logical operators :
+    undefined -> false
+    null -> false
+    number -> (+0,-0,NaN) :False, all others :true
+    string -> false if size is 0
+    symbol -> always true
+    object -> always true
+
+    Coercion - Type Interconversion
+        -> in and gate if first input is false it does not evaluate the second input immediately it returns the first input, but if first input is true then it will return the second input
+
+        -> in or gate if the first input is true then it does not evaluate the second value and immediately returns the first input but it first input is false then it returns the second input.
+
+
+Special Numbers :
+    ->0
+    ->-0 - it helps in directional properties
+    ->NaN - (Not a number) if there is a situation where you are bound to return a number but there is no       number to return then NaN is returned 
+        ### Which is the only number in Js which is not equal to itself? 
+            -> NaN
+
+    ->infinity -
+
+
+
+->Bitwise Operators
+    it performs the corresponding operation bit by bit on given operand.
+        &- Bitwise AND
+        |- Bitwise OR
+        ^- Bitwise XOR
+        ~- Bitwise NOT
+
+
+-> Equality Operators
+    1. ==  (Abstract Equality Operators) 
+        -it checks the type of both the operands if types are same then it calls ===, if types are not same then type conversion occurs and then comparison is done.
+    2. === (Strict Equality Operators )
+        - it also checks the type of both the operands it types are different then it returns false, if types are same then value comparison occurs.
+
+
+-> Typeof Operators
+    it gives the type of datatype of that variable.
+
 
