@@ -1,0 +1,92 @@
+-> Basics of JS:
+    -Program in a running state is known as process.
+    -All programs are executed in RAM only.
+    -When process is loaded in memory it is allocated some memory by RAM.
+    -All piece of information are stored in RAM.
+
+
+-> KeyWords:
+    In programming language some words are reserved by the languages for its own purpose. They have the special meaning or special use case.
+    Ex-let, for, function, while,etc.
+
+
+-> How can we store some values in program?
+    To store values we use variables.
+        The memory bucket in which values are stored and has its own name.
+
+        -> How to create variables in JS?
+            1. Using var KeyWords  : 
+                var <variable_name> = value;
+            2. Using let KeyWords
+                let <variable_name> = value;
+            3. Using const KeyWords
+                const <variable_name> = value;
+
+
+        -> Rules for variable creation :-
+            1. Variable can contain small alphabets, capital,digits and underscore.
+            2. We cant have space or any other special character.
+            3. We should always give some meaningful name to the variables.
+            4. We can not start the variable name with the digits.
+            5. We can not use keywords as variable name.
+
+-> Why we use semicolon?
+    one line of js code is equivalent to an instruction. So one complete instruction in js is called statement.
+    it is not mandatory in JS. But it is a recommended practice as it differentiates the statements;
+
+
+-> How to show the data to the user?
+    Input------->Function------->Output
+    Here to show the data to the user we use the following function :
+        console.log("x") --->this function take some data and display it to the user.
+        if we have two different console.logs() they print their data in different lines.
+        we can also pass multiple values and print them in same line. 
+
+-> What all values we can store in js?
+    1. Number - 10,20,30,etc 
+    2. String - "Name", 'Name',`Name`
+    3. Boolean - true or false
+    4. Undefined - Something not defined yet but may be defined later. (let a;)
+    5. Object - if we have to somehow store key-value pairs then we use object. <name:King>
+    6. Null - It actually represents empty value. (let a= NULL;)
+
+
+
+    ex: var marks = 100;
+        var name = "ZS";
+        var age;
+        var company = null;
+        console.log("Marks: ", marks);
+        console.log("Name: ", name);
+        console.log("Age: ", age);
+        console.log("Company: ", company);
+    Output :
+        Marks:  100
+        Name:  ZS
+        Age:  undefined
+        Company:  null
+
+
+-> Two types of datatype :
+    1. Primitive datatype - Types which are atomic in nature.(Number)
+    2. Non-Primitive datatype - Types which are the composition of other keys.(Object) it depends on other types.
+
+
+-> Special characters :
+    1. "\n" - Its called escape sequence. It print next line.
+    2. "\t" - it prints 4 white spaces.
+    3."\\" - to use other special character we use double backslash.
+
+
+->Comments :
+    Comments are a piece of code that is for documentation purpose. Programming languages skips the comment. It has nothing to do with the execution.
+    Two types of comment :
+        Single line comment - //This is a single line comment
+        Multiple line comment - /* this 
+                                    is multiline comment*/
+
+
+-> Operators :
+    1. Arithmetic Operators : +,-,*,%,/,**
+    2. 
+
