@@ -1,0 +1,32 @@
+->Conditional statements 
+    -Using conditional statement we evaluate a condition so we can take decision and correspondingly change the actions we want to do.
+    1. if
+    2. else
+
+        if(condition){                    "pair of curly brackets create a block"
+
+        }
+        else{
+    
+        }
+
+        if the if condition is true then it will execute the statements of the if block else it will execute the condition of else block.
+    
+    ### If block can exist without the else block but else block can not exist without the if block.
+
+    ### also there exist the concept of nested loops!
+
+    ### there is the concept of else if like other languages as well!
+
+
+
+-> Loops :
+    Where we have to do things repeatedly, loops help.
+    Using loops we will be able to repeat the task again and again.
+
+    We have multiple ways for the looping control!
+        1. while loop
+            difference between while and if is that if checks only only one time its condition whether it is true or false where as while checks it until the condition is become false.
+        
+        2. for loop
+        

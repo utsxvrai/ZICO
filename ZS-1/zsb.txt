@@ -139,5 +139,3 @@ Special Numbers :
 
 -> Typeof Operators
     it gives the type of datatype of that variable.
-
-
