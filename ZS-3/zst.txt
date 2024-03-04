@@ -1,0 +1,65 @@
+-->Dry -  (Don't Repeat Yourself) it is a principle on which functions work.
+
+--> Function : It is a black box in which you provide an input , process it and return a value.
+
+--> We have two choices so we can use others created function or we can created a function and use it.
+    1. Inbuilt Function
+    
+--> Now we have created a function and put our logic in it now we can use as many times as we time!
+--> If we need to change the logic we have to change it only once and this is the essence of function and on this basis we can say that it is following DRY principle.
+
+
+-->How to create a function in JS?
+
+    function name_function(input 1, input 2){
+        (logic)
+           .
+           .
+           .
+           .
+        return (something);
+    }
+
+    eg. create a funtion to check the number is even or odd
+
+    function isEvenOdd(num){
+        if(num%2==0){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+
+-->WHy we are doing return?
+    ->What is console.log()? -> It is also a function in which console is an object and log is key of which functions are the values.
+
+        console = {
+            key : functions(){...}
+        }
+
+        It returns undefined!
+
+    we return because it helps to store the returned value. 
+
+    -> if we don't return manually in the function , js will automatically return undefined.
+
+
+
+--> parameters and argument
+    ->The place where we defined the function the inputs are called the parameters.
+        eg. function isEven(x,y){
+
+        }
+            x and y are the parameters.
+
+    ->When we call the function , the inputs passed are called the arguments.
+        eg. let x = isEven(a,b)
+            a and b are argument.
+
+
+-->If ant one either left or right operand is string and the operator is + then it will convert the operand if it os not a string and then concatenate both of them and return a new string.
+    eg. "Utsav"+10= "Utsav10"
+
+-->String concatenation creates new string , it does not update the existing string because in js string is immutable.
+
