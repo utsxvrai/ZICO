@@ -1,0 +1,47 @@
+--> a++ : postfix unary operator, first use it then increase it
+--> ++a : prefix unary operator, first increase it then use it
+--> a-- : postfix unary decrement, first use it then decrease it by 1
+--> --a : prefix unary decrement , first decrease it then use it
+--> +a : unary plus, it doesn't change the original operand instead returns the converted value
+--> -a : it also convert the operand a into number but it always return the negative number.
+--> typeof() is also an unary operator.
+
+
+do while loop :
+    do{
+        statement;
+        statement;
+    }while(condition);
+
+    even if condition is false this loop ensures that atleast one time it will go inside the loop and execute the statement.
+    -->do-while loop is an exit control and while loop is an entry control.
+
+--> Ternary Operator:
+
+    let y = ((condition) ? (expression1) : (expression2));
+        if the condition is true then expression1 will be returned if it is false then expression2 will be returned.
+
+    it is a cleaner way to write if-else statement. if it has only one if and one else then it is an ideal way to use.
+
+--> Switch-Case :
+
+    switch(value or expression){
+        case value1:
+            logic;
+            break;
+        
+        case value2:
+            logic;
+            break;
+
+
+        default:
+            logic;
+    }
+
+    if we dont have default and none of the cases are matching then it will do nothing.
+    if we dont put break then whatever case we hit everything will be executed after that case.
+
+
+
+    
