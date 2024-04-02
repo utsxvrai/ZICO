@@ -1,0 +1,290 @@
+--> Network : it is a group or system of interconnected people or group. Computers connected with each other   with cables or wires is called computer networks.
+
+--> Internet : in a nutshell, it is the network of computer networks. Complex web of interconnected network.
+
+--> in 1957, russia launched sputnik also America launched ARPA(it was a facility for research)
+
+--> in 60's - 70's they made the communication system for ARPA's computer to talk.
+
+-->in 1969 ARPANET was launched.
+
+--> in 80's TCP/IP 
+
+--> in 90's CERN came, it was using hyperlink based document.
+
+--> in 1990 Tim Berner Lee launched "www" the browsers which were supporting www was  MOSAIC and Netscape
+
+
+
+
+> Protocol
+-----------
+    Network protocols are the set of rules and regulation setup to communicate and share information over a network
+    eg. HTTP, UDP, SMTP, etc.
+
+    >Packets :
+    ----------
+    In order to share data, we cant sent big chunk of data over a network. So we divide the data into smaller chunks and these smaller chunks are called packets.
+
+    >Address :
+    ----------
+    Sending messages over the network requires the destination details. This detail uniquely identify the end system which is called address.
+
+    >Ports :
+    --------
+    Any machine could be running many network apps. In order to distinguish these apps for receiving messages we use ports(port number).
+    Ports help you to get the packet to specific process on the host.
+    Every application has 16 bit port number.
+    Range of port number : 0 - 2e16
+    1. Well known ports : 0 - 1023
+        eg. port 80 - http
+            port 443 - https
+    2. Registered Ports : 1024 - 49152 (They are used by specific potentially proprietary apps that are known but not system defined)
+        eg. sql server - 1433
+            mongodb - 27017
+    3. Dynamic Ports : 49152 - 65535
+
+    IP Address + Port --> Socket
+
+
+--> Access Network :
+--------------------
+    This are media using which end systems connect to the internet.
+
+    >Network interface adapter : 
+    -----------------------------
+        It enables a computer to attach to a network as there are different types of network it acts as single suit to connect to any network.
+
+
+--> DSL(Digital Subscriber line)
+--------------------------------
+    DSL uses the existing telephone ground work lines for internet connection, generally dsl provided by the same company which supplies telephone service.
+
+
+-->ISP (Internet Service Provider)
+----------------------------------
+    It is just a company that provides end user internet.
+        eg. AT&t
+
+-->Network Protocol Stack
+-------------------------
+
+1. OSI Model      : Application -> Presentation -> Session -> Transport -> Network -> Data Link -> Physical  (7 Layered)
+2. TCP/IP Model   : Application -> Transport -> Network -> Data Link -> Physical  (5 Layered)
+
+    >Application :
+    --------------
+        Email Server, Chat Server,etc
+    >Presentation :
+    ---------------
+        Presentation of data, decryption, encryption,etc.
+    >Session :
+    ----------
+        User session management
+    >Transport :
+    ------------
+        Divide big chunk of data into smaller chunks and manage this chunks.
+    >Network :
+    ----------
+        How routing of packets will be done on internet.
+    >DLL :
+    ------
+        error, flow control, multiplexing and demultiplexes also it handles addressing.
+    >Phisycal :
+    -----------
+        transfer of packets
+
+
+-->Application Layer :
+----------------------
+    1. Writing/providing data off the network.
+    2. Reading the data from the user
+    3. Contains applications that helps users to internet on the network.
+    4. Sometimes error handling & recovery can also be done.
+    5. It exits on end system only.
+
+    Client - Server Architecture :-
+    -------------------------------
+        It is two level architecture.
+            1. Client side
+            2. server side
+        
+        >Server :
+        ---------
+            This process controls access to a centralized resource or service such as a website/webapp.  
+
+        >Client :
+        ---------
+            Frontend where user interacts.
+    
+    P2P Architecture : 
+    ------------------
+        Many computers communicate with each other they act server and client on there own.
+
+    Hybrid Architecture :
+    ---------------------
+        It is the combination of client-server and p2p architecture.
+
+
+
+-->HTTP :
+---------
+    It stands for Hypertext transfer protocol.
+
+    It defines the whole procedure on how client & server will interact.
+    The first msg -> http request
+    The second msg -> http response
+
+    http is stateless protocol.(server do not store any information about the client).
+
+    -> A lot of application layer protocols depend on lower level protocols of transport layer.
+
+        -> In transport layer there are 2 main layer 
+            1. TCP
+            2. UDP
+
+            HTTP depends on TCP.
+
+            -> There are two types of http connection :
+                1. persistent http
+                2. non-persistent http
+
+    ->HTTP Methods :
+    ----------------
+        1. HTTP request message :
+        -------------------------
+            Any http message are plain ascii text 
+                - host
+                - method 
+                - status code
+                 .
+                 .
+                 .
+            
+            Method - get
+            url - www.booking.com
+
+            >Method :
+            ---------
+                There are multiple http methods :
+                    1. get -> request some data
+                    2. post -> put some data on the server
+                    3. put -> updates the data
+                    4. patch -> updates the data
+                    5. delete -> deletes an object at a given url
+
+            >User agent :
+            -------------
+                it specifies the client . Useful when server has different web pages that exist for different devices.
+
+            >HTTP Status Code :
+            -------------------
+                This indicates whether the requested process is completed or not.
+
+    ->Objects - web pages are the main objects that contains other objects. Every object has a url.
+
+
+    >URL(Uniform Resource Locator) :
+    --------------------------------
+        |-Protocol
+        |-hostname
+        |-location of the file
+        |-other arguments
+
+        http://flipkart.com/image/23.jpg
+          '        '           '
+    (Protocol)  (hostname) (location) 
+
+
+
+-->Cookies
+----------
+    > These are mainly concerned about the privacies.
+    > HTTP is a stateless protocol & a lot of time user session is required.
+    
+    ->How cookies work?
+        > cookies are unique identifier strings. These are set by the server through http header. as soon as a cookies is stored it is set along with subsequent http response to the same server.
+        > This allows server to know who is contacting it and hence serve the content accordingly.
+
+        --> Set-Cookie header
+        ---------------------
+            when a server wants to set a cookie it includes "set-cookies : value" is the http response. 
+
+
+-->Email : SMTP
+---------------
+    > For executing the functionality of email SMTP is used(Simple Mail Transfer Protocol).One more protocol is used POP3 is used in combination with smtp. one is used to send emails that are stored in the user's box and others is used to retrieve the emails sent to a user.
+
+    > Smtp also uses TCP protocol from transport layer.
+    > Connection for SMTP is setup on port 25.
+    > Mails clients gives the actual UI to send and recieve the emails from the users.
+
+    -> How it works?
+        > When ab emails is sent it is sent to the sender's smtp server using smtp protocol.(Also smtp server is configured in mails clients)
+        > SMTP server places the emails on message queue.
+
+        > then smtp server initiates a connection with receivers smtp server and conducts an initial smtp handshake.
+
+        > Then finally it sends the emails to receiver smtp server.
+        > The email is downloaded from receivers smtp server so that the client shows the email.
+
+
+        smtp is a push protocol and pop3/imap are pull protocols.
+
+        > if recipients smtp server is offline the sender smtp server tries again & again after some delta times.
+
+
+    -->POP(post office protocol) :
+        > it downloads emails in 4 phases :
+            1. Connect
+            2. Authorize
+            3. Transaction 
+            4. Update
+
+        > Two modes of pop :
+            1. Download and keep 
+            2. Download and delete
+
+    -->IMAP(internet message access protocol):
+        > Emails are kept on the server & not deleted.
+        > local copies of the emails are cached on each device.
+        > if an email is deleted by user manually then only it gets deleted from server.
+
+
+--> Transport Layer:
+--------------------
+    The key responsibilities is to extend the network layer to the application layer.
+
+    TL and its protocols reside in the end system.
+
+    responsibilities :
+        > Segmented Data : Divides the data into manageable pieces called segments and datagrams.
+
+        > Can allow multiple conversation
+
+        > multiplexing data
+        > Demultiplexing 
+        > Reliable Data Transfer
+
+    Let us see some workarounds for network layer imperfection :
+    1. Checksum : The first imperfection for network layer is that segments may be corrupted by transmission errors. Checksum is an error detection mechanism Checksum are attached with the segment which is verified by receiver.
+
+    2. Retransmission Timers :
+    3. Sequence number :
+
+
+
+->TCP(Transmission control protocol)
+------------------------------------
+    >What tcp does?
+        1> Send data
+        2> Segment Data
+        3> Congestion control
+        4> Identify and retransmit message    
+
+    >Key features :
+        > Connection Oriented
+        > full duplex 
+        > point to point transmission
+        > congestion control 
+        
