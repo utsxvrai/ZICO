@@ -1,0 +1,141 @@
+body {
+    background-color: #191919 ;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh; /* Ensure full viewport height */
+}
+
+.title {
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: rgb(0,255,255);
+    padding: 20px;
+}
+
+.counter {
+    display: flex;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0,255,255);
+}
+
+.boxx {
+    margin: 30px;
+    width: 25%;
+    height:175px;
+    background-color: #EBF400;
+    border: 0.1px solid #000000;
+    box-shadow: 0px 1px 2px 0px rgba(0,255,255,0.7),
+    1px 2px 4px 0px rgba(0,255,255,0.7),
+    2px 4px 8px 0px rgba(0,255,255,0.7),
+    2px 4px 16px 0px rgba(0,255,255,0.7);
+    border-radius: 10px;
+    padding: 0px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    position: relative; /* Added this line */
+}
+.plate1{
+    background-color: rgb(0,255,255);
+    border: 1px solid #000000;
+    width: 10px;;
+    height: 60px;
+    margin : 0; 
+    top: 50%;
+    left:0;
+    border-radius: 25%;
+    position: absolute; /* Added this line */
+    top: 50%; /* Added this line */
+    transform: translateY(-50%); /* Added this line */
+}
+.ball{
+    background-color: #000000;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: 0;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+.plate2{
+    background-color: rgb(0,255,255) ;
+    border: 1px solid #000000;
+    width: 10px;;
+    height: 60px;
+    margin : auto,0;   
+    right: 0;
+    top: 50%;
+    border-radius: 25%;
+    position: absolute; /* Added this line */
+    top: 50%; /* Added this line */
+    transform: translateY(-50%); /* Added this line */
+}
+
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tg {
+    background-color: rgb(0,255,255);
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 40px;
+    margin-right: 40px
+}
+
+
+
+.tg:hover {
+    background-color: #fff200;
+    color: #000000;
+}
+
+.currentScore{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(0,255,255);
+
+}
+.targetScore {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(0,255,255);
+}
+
+.tg1{
+    background-color: rgb(0,255,255);
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 20px;
+}
