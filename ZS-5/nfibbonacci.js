@@ -11,3 +11,4 @@ function fibb(n){
 }
 
 fibb(1);
+fib

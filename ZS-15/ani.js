@@ -5,7 +5,7 @@ var counter = document.getElementById("counter");
 var paddle1 = document.querySelector(".plate1");
 var paddle2 = document.querySelector(".plate2");
 var board = document.querySelector(".boxx");
-
+var board3 = document.querySelector(".boxx3");
 let state= "stop";
 
 let p1 = paddle1.getBoundingClientRect();
@@ -52,10 +52,10 @@ function startGame(e){
             if (event.key === "w") {
                 paddle1.style.top =
                 Math.max(
-                  bc.top,
+                    bc.top,
                   p1.top - window.innerHeight * 0.002
                 ) + 'px';
-              p1 = paddle1.getBoundingClientRect();
+                p1 = paddle1.getBoundingClientRect();
 
             } else if (event.key === "s") {
                 // Handle "s" key press
