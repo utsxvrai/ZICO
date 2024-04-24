@@ -2,5 +2,8 @@
     "files.associations": {
         "memory_resource": "c",
         "scoped_allocator": "c"
-    }
+    },
+    "cSpell.words": [
+        "Recieving"
+    ]
 }
