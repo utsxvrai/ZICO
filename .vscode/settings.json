@@ -4,6 +4,8 @@
         "scoped_allocator": "c"
     },
     "cSpell.words": [
+        "concat",
         "Recieving"
-    ]
+    ],
+    "liveServer.settings.port": 5501
 }

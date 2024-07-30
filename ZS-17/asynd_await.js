@@ -51,3 +51,6 @@ for(let i = 0 ; i < 100000000 ; i++ ){
 
 setTimeout(function f(){},4000);
 console.log("For loop done!");
+
+
+// promise.all - for parallel execution
