@@ -33,4 +33,19 @@ lets work with the github
  
 
 1. Diff between git rm and git restore:
-ans: if you want to move the whole file back to the untracked state then we do `git rm`, if you just want the changes to be move in working area or staging area then we use `git restore`. 
+ans: if you want to move the whole file back to the untracked state then we do `git rm`, if you just want the changes to be move in working area or staging area then we use `git restore`.
+
+
+-> `git diff commit1 commit2` : it gives the difference of all file  
+
+->`git remote ` : list down all the remote connection names
+
+-> Remote connection : It helps you to link two git repo for uploading and down loading changes from each otherwise.
+
+->`git remote add <name of remote>` : this command help remote repo and give a name to it
+
+-> `git remote rm <name of remote>` : this command deletes a remote connection 
+
+->`git remote rename <oldname> <newname> ` : this command renames the remote
+
+Note: The name of the remote connection is always used to establish communication.
