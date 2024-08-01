@@ -49,3 +49,20 @@ ans: if you want to move the whole file back to the untracked state then we do `
 ->`git remote rename <oldname> <newname> ` : this command renames the remote
 
 Note: The name of the remote connection is always used to establish communication.
+
+-> `git add <file1> <file2> <file3>` : it will add only specific files.
+
+-> `git add .` : this command will add all files from working area to staged area
+
+-> `git pull <remote name> <branch name>` : downloads latest changes from the branch of the mentioned remote in your local repo.
+
+###Recommended Practice to do 
+
+    - make changes
+    - git add <file>
+    - git commit
+    - git pull
+    - git push
+
+
+merge conflicts can occur if multiple people try to make changes to the same file and then collaborate 
