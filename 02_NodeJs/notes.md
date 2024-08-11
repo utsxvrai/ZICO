@@ -20,3 +20,5 @@
 `package.json`contains metadata the project's dependencies!
 
 `package-lock.json` contains the exact versions of all dependencies and their dependencies, ensuring that the same versions are installed each time the project is set up.
+
+`console.log(__dirname)`; works with old javascript
