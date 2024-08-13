@@ -13,13 +13,29 @@ class Product {
         // return this; // it is equivalent to return this in js
     }
 
+    set setName(n){
+        if(typeof n === "string"){
+            this.name = n;
+        }
+        else{
+            console.log("Invalid name");
+        }
+    }
+
+    get getName(){
+        return this.name;
+    }
+
     display(){
 
     }
 }
 
-const p = new Product("Bag" , 100 , "a cool bag");  // creating an object of the class Product and calling the constructor
+// const p = new Product("Bag" , 100 , "a cool bag");  // creating an object of the class Product and calling the constructor
 
 // if you dont write a constructor in the class, then the class will have a default constructor
 
-console.log(p); // Product { name: 'Bag', price: 100, description: 'a cool bag' }
+// console.log(p); // Product { name: 'Bag', price: 100, description: 'a cool bag' }
+console.log(Object);
+
+// we can use setter and getter methods to access the properties of the class   
